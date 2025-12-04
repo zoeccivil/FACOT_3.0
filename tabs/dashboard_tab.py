@@ -368,11 +368,11 @@ class DashboardTab(QWidget):
                 clients = self.logic.get_third_parties(company_id) or []
                 self.card_clientes.set_value(str(len(clients)))
             elif hasattr(self.logic, 'search_third_parties'):
-                # Fallback: just show a dash
-                self.card_clientes.set_value("-")
+                # Fallback: show N/A when method not available
+                self.card_clientes.set_value("N/A")
                 
         except Exception as e:
-            print(f"[DashboardTab] Error loading data: {e}")
+            print(f"[DashboardTab] Error loading invoice data: {e}")
     
     def refresh(self):
         """Refresh dashboard data."""

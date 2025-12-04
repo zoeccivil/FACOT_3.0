@@ -12,7 +12,6 @@ import os, sys
 
 import facot_config
 from logic import LogicController
-from widgets.connection_status_bar import ConnectionStatusBar
 
 # Tabs modulares
 from tabs.invoice_tab import InvoiceTab
@@ -32,6 +31,9 @@ from items_management_window import ItemsManagementWindow
 
 # Dialog para editar plantillas (botón/menú)
 from dialogs.template_editor_dialog import TemplateEditorDialog
+
+# Custom widgets
+from widgets.connection_status_bar import ConnectionStatusBar
 
 # -*- coding: utf-8 -*-
 

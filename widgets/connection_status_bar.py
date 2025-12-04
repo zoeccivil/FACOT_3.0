@@ -198,9 +198,9 @@ class ConnectionStatusBar(QWidget):
         """Open file dialog to change database."""
         filename, _ = QFileDialog.getOpenFileName(
             self,
-            "Select Database File",
+            "Seleccionar Archivo de Base de Datos",
             "",
-            "SQLite Database (*.db);;All Files (*.*)"
+            "Base de Datos SQLite (*.db);;Todos los Archivos (*.*)"
         )
         if filename:
             self.database_changed.emit(filename)
